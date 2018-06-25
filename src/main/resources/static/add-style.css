@@ -18,8 +18,9 @@ body{
 }
 
 .right-just{
-    position: relative;
-    right: 0;
+    position: absolute;
+    right: 70px;
+    font-size: 25px;
 }
 
 .app-section{
