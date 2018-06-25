@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.com">
+<head>
+    <meta charset="UTF-8" />
+    <title>Movies</title>
+    <link rel="stylesheet" type="text/css" href="/add-style.css">
+</head>
+<body>
+<div class="m1">
+<form class="content-wrapper app-section" action="#" th:action="@{/process}" th:object="${movie}" method="post">
+    <input type="hidden" th:field="*{id}" />
+    <label>Movie Title:&nbsp;&nbsp;</label>
+    <input type="text" th:field="*{title}"/>
+    <span th:if="${#fields.hasErrors('title')}" th:errors="*{title}"></span>
+    <label>&nbsp;&nbsp;Year of Release:&nbsp;&nbsp;</label>
+    <input type="text" th:field="*{yearRelease}"/>
+    <span th:if="${#fields.hasErrors('yearRelease')}" th:errors="*{yearRelease}"></span>
+    <label>&nbsp;&nbsp;Director: &nbsp;&nbsp;</label>
+    <input type="text" th:field="*{director}"/>
+    <span th:if="${#fields.hasErrors('director')}" th:errors="*{director}"></span>
+    <label>&nbsp;&nbsp;Plot Summary:&nbsp;&nbsp;</label>
+    <input type="text" th:field="*{plot}"/>
+    <span th:if="${#fields.hasErrors('plot')}" th:errors="*{plot}"></span>
+    <input class="right-just" type="submit" value="Submit"/>
+</form>
+</div>
+</body>
+</html>
