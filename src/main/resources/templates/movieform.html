@@ -9,19 +9,19 @@
 <div class="m1">
 <form class="content-wrapper app-section" action="#" th:action="@{/process}" th:object="${movie}" method="post">
     <input type="hidden" th:field="*{id}" />
-    <label>Movie Title:&nbsp;&nbsp;</label>
+    <label>Movie Title:</label>
     <input type="text" th:field="*{title}"/>
     <span th:if="${#fields.hasErrors('title')}" th:errors="*{title}"></span>
-    <label>&nbsp;&nbsp;Year of Release:&nbsp;&nbsp;</label>
+    <label>Year of Release:</label>
     <input type="text" th:field="*{yearRelease}"/>
     <span th:if="${#fields.hasErrors('yearRelease')}" th:errors="*{yearRelease}"></span>
-    <label>&nbsp;&nbsp;Director: &nbsp;&nbsp;</label>
+    <label>Director: </label>
     <input type="text" th:field="*{director}"/>
     <span th:if="${#fields.hasErrors('director')}" th:errors="*{director}"></span>
-    <label>&nbsp;&nbsp;Plot Summary:&nbsp;&nbsp;</label>
+    <label>Plot Summary:</label>
     <input type="text" th:field="*{plot}"/>
     <span th:if="${#fields.hasErrors('plot')}" th:errors="*{plot}"></span>
-    <input class="right-just" type="submit" value="Submit"/>
+    <input class="submit" type="submit" value="Submit"/>
 </form>
 </div>
 </body>

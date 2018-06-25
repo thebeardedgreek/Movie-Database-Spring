@@ -20,7 +20,7 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <table th:each="movie: ${movies}">
                         <tr>
-                            <a th:text="${movie.title}" th:href="@{/detail/{id}(id=${movie.id})}"></a>
+                            <a th:text=" ${movie.title}" th:href="@{/detail/{id}(id=${movie.id})}"></a>
                         </tr>
                     </table>
                 </div>

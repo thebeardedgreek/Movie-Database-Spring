@@ -17,14 +17,15 @@ body{
     padding-top: 150px;
 }
 
-.right-just{
-    position: absolute;
-    right: 70px;
+.submit{
+    background-color: rgba(132, 0, 146, 0.5);
     font-size: 25px;
+    color: white;
 }
 
 .app-section{
     display: flex;
+    justify-content: space-evenly;
     padding: 20px;
     margin: 20px;
     align-items: center;
