@@ -18,7 +18,7 @@ body{
 }
 
 .submit{
-    background-color: rgba(132, 0, 146, 0.5);
+    background-color: rgba(132, 0, 146, 0.4);
     font-size: 25px;
     color: white;
 }
@@ -31,4 +31,33 @@ body{
     align-items: center;
     color: white;
     font-size: 25px;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1,1);
+    }
+    75% {
+        color: black;
+        background-color: silver;
+        font-weight: 300;
+    }
+    100% {
+        transform: scale(1.1,1.1);
+        color: black;
+        background-color: silver;
+        font-weight: 400;
+    }
+}
+
+.intro-button{
+    background-color: rgba(0, 0, 0, 0.55);
+    opacity: 2;
+    color: silver;
+    padding: 10px;
+    border-color: gold;
+    border-radius: 30px;
+}
+.intro-button:hover{
+    animation: pulse 0.8s infinite alternate;
 }

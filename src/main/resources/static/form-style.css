@@ -4,12 +4,12 @@ body{
 }
 
 .link{
-	color: red;
+	color: darkgreen;
 	font-size: 35px;
 }
 
 .content-wrapper{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(132, 0, 146, 0.3);
     padding: 16px;
     border: 2px solid white;
 }
